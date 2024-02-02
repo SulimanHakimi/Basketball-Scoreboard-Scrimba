@@ -1,0 +1,79 @@
+@font-face {
+  font-family: sulimanFont;
+  src: url("./fonts/CursedTimerUlil-Aznm.ttf");
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.conerniar {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(30, 18, 139);
+}
+.Home,
+.Guest {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  width: 250px;
+}
+#reset {
+  margin-top: 250px;
+  margin-right: 15px;
+}
+#reset:hover {
+  background-color: red;
+}
+#save:hover{
+    background: green;
+}
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+}
+.point-show {
+    width: 200px;
+  max-width: 200px;
+  height: 150px;
+  background-color: black;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  font-family: sulimanFont;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(216, 216, 216);
+}
+#Guest-p {
+  color: red;
+}
+#Home-p {
+  color: green;
+}
+button {
+  padding: 15px 18px;
+  border: 2px solid rgb(148, 148, 148);
+  border-radius: 8px;
+  color: white;
+  background-color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: sulimanFont;
+}
+.number-Btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
