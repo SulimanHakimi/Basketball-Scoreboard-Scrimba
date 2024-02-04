@@ -4,9 +4,10 @@ let homeBtns = document.querySelectorAll(".homeBtn");
 let guestBtns = document.querySelectorAll(".guestBtn");
 let reset = document.getElementById("reset");
 let save = document.getElementById("save");
-
+let timer = document.querySelector(".timer");
 let homeNumber = 0;
 let guestNumber = 0;
+
 homeBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     homeNumber += Number(btn.value);
@@ -30,6 +31,7 @@ save.addEventListener("click", () => {
   } else if (guestNumber > 30 && guestNumber > homeNumber) {
     alert("guest win");
     remover();
+  } else if (guestNumber == 0 && homeNumber == 0) {
   } else {
     alert("points is less then 30 match level");
   }
